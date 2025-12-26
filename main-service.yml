@@ -1,1 +1,16 @@
-# configuration will be added later
+server:
+  port: 8082
+
+spring:
+  application:
+    name: main-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/maindb
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
