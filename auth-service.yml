@@ -8,3 +8,8 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQLDialect
+    
+jwt:
+  secret: mySuperSecretKeyForJWT123456789
+  expiration: 3600000  # 1 hour
+
